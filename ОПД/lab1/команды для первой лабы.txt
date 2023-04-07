@@ -1,0 +1,199 @@
+cd /home/s367301/lab0
+ls -la
+cd /home/s367301/
+cd /home/s367301
+cd ./home/s367301
+cd ..
+ls -la
+cd ./home/s367301
+cd ./s367301
+ls -la
+mkdir lab0
+ls -la
+cd lab0/
+ls -la
+cat > cacturne3
+ls -la
+cat cacturne3 
+mkdir cyndaquil6
+ls -la
+sudo chmod 357 cyndaquil6 
+chmod 357 cyndaquil6 
+ls -la
+chmod 044 cacturne3 
+ls -la
+mkdir chimecho
+ls -la
+rm -d cyndaquil6/
+ls -la
+rm -d chimecho/
+ls -la
+mkdir cyndaquil6 | chmod 357 cyndaquil6
+ls -la
+chmod 357 cyndaquil6
+ls -la
+cd ./cyndaquil6/
+ls -la
+cd .
+cd ..
+chmod 757 cyndaquil6/
+ls -la
+cd cyndaquil6/
+ls -la
+mkdir chimecho | mkdir omastar
+ls -la
+mkdir dragonite | cat > dragonite
+cat > dragonite
+ls -la
+rm dragonite 
+ls -la
+ls -la ./chimecho/
+ls -la ./omastar/
+clear
+ls -la
+mkdir dragonite | cat > cloyster
+cat > ./cloyster 
+chmod 770 ./omastar/
+chmod 500 ./dragonite/
+ls -la
+cat > riolu
+search sublime
+apt search sublime
+gedit ./riolu 
+nano ./riolu 
+more ./riolu 
+more ./riolu 
+ls -la 
+chmod 777 ./chimecho/
+ls -la
+chmod 006 ./cloyster 
+ls -la
+chmod 044 riolu 
+ls -la
+cd ..
+ls -la
+chmod 357 ./cyndaquil6/
+ls -la
+clear 
+ls -la
+cat > ./dewgong
+chmod 044 ./dewgong 
+ls -la
+mkdir ./gliscor3
+ls -la
+cd ./gliscor3/
+ls -la\
+ls -la
+mkdir ./bellsprout | mkdir bellosom | ls -la
+mkdir ./nidoqueen | mkdir ./klink | touch ./pidove
+ls -la
+cat pidove 
+cat > pidove 
+chmod 577 bellsprout/
+chmod 753 ./bellosom/
+ls -la
+chmod 577 ./nidoqueen/
+ls -la
+chmod 664 ./pidove 
+chmod 753 ./klink
+ls -la
+cd ..
+ls -la
+chmod 357 gliscor3/
+ls -la
+mkdir ./spoink0
+ls -la
+cd ./spoink0/
+touch ./chikorita | mkdir ./dodrio | touch ./weeppinbell | mkdir ./torterra
+cat > ./chikorita 
+cat > weeppinbell 
+ls -la
+chmod 046 ./chikorita 
+chmod 315 ./dodrio/ | chmod 400 ./weeppinbell | chmod 3077 ./torterra/
+cd ..
+ls -la
+chmod 733 ./spoink0/ | touch ./wailmer1
+cat > ./wailmer1 
+chmod 066 ./wailmer1 
+ls -la
+tree
+history -1000
+history 1000
+cat /home/s367301/.bash_history
+find .bash_history
+find /home ".bash_history"
+find /home/s367301 ".bash_history"
+find /home/studs/s367301 ".bash_history"
+cat ~/.bash_history > history_backup
+cat history > history_backup
+ls -la
+vim ./wailmer1 
+clear
+history 1000
+history -w ~/history.txt
+vim ./history.txt
+clear
+ls -la
+cat ./wailmer1~
+chmod 766 ./wailmer1~
+cat ./wailmer1~\
+chmod 044 ./wailmer1~
+cat ./wailmer1
+chmod 744 ./wailmer1
+cat ./wailmer1
+rm ./wailmer1
+la -ls
+ls -la
+history -w ./history.txt 
+cat ./history
+cat ./history.txt
+ls -la
+cat ./history_backup 
+rm ./history_backup 
+ls -la
+mv ./wailmer1~ ./wailmer1
+ls -la
+cat ./history.txt 
+cd ./dewgong 
+clear
+ls -la
+mv dewgong dewgong7
+ls -la
+ln -s ./dewgong7 ./lab0/gliscor3/pidovedewgong
+ln -s ./dewgong7 lab0/gliscor3/pidovedewgong
+cd ./lab0/gliscor3/
+cd ./gliscor3/
+ls -la
+cd ..
+chmod u+r ./gliscor3/
+cd ./gliscor3/
+ls -la
+chmod u+x ~/lab0/dewgong7  
+ln -s ~/lab0/dewgong7 pidovedewgong
+ls -la
+cat ./pidovedewgong 
+chmod u+r /home/studs/s367301/lab0/dewgong7
+cat ./pidovedewgong 
+chmod u-r /home/studs/s367301/lab0/dewgong7
+ls -la
+chmod u-x ~/lab0/dewgong7  
+cd ..
+ls -la
+cp ./cacturne3 ./gliscor3/klink
+chmod u+x ./cacturne3
+cp ./cacturne3 ./gliscor3/klink
+chmod u-x ./cacturne3
+chmod u+w ./cacturne3
+cp ./cacturne3 ./gliscor3/klink
+ls -la
+chmod u+7 ./cacturne3 
+chmod u+rwx ./cacturne3 
+cp ./cacturne3 ./gliscor3/klink
+chmod u-rwx ./cacturne3 
+cd ./gliscor3//klink/
+ls -la
+cat ./cacturne3 
+cd ../..
+ln -s ./spoink0 Copy_15 
+ls -la
+history -w ./history.txt

@@ -1,0 +1,2 @@
+jar -cfm res.jar MANIFEST.mf {**/**/*,**/*,*}.class
+ java -jar ./res.jar 

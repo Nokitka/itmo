@@ -1,0 +1,71 @@
+CREATE TABLE galaxy(
+	id SERIAL PRIMARY KEY,
+	age BIGINT NOT NULL,
+	found BOOLEAN NOT NULL,
+	name varchar(20)
+);
+
+CREATE TABLE planet(
+	id SERIAL PRIMARY KEY,
+	hasLive BOOLEAN NOT NULL,
+	name varchar(20) NOT NULL, 
+	galaxy_id REFERENCES galaxy(id)
+);
+
+CREATE TABLE satellite(
+	id SERIAL PRIMARY KEY,
+	size INT,
+	color varchar(10) NOT NULL,
+	planet_id REFERENCES planet(id)
+);
+
+CREATE TABLE person(
+	id SERIAL PRIMARY KEY,
+	name varchar(10) NOT NULL,
+	age INT NOT NULL,
+	nationality varchar(10),
+	planet_id REFERENCES planet(id)
+);
+
+CREATE TABLE obj(
+	id SERIAL PRIMARY KEY,
+	name varchar NOT NULL,
+	description varchar(100)
+);
+
+CREATE TABLE person_obj(
+	id SERIAL PRIMARY KEY,
+	obj_id SERIAL REFERENCES person(id),
+	person_id REFERENCES person(id)
+);
+
+CREATE TABLE stars(
+	id SERIAL PRIMARY KEY,
+	name varchar(20),
+	color varchar(10) NOT NULL,
+	status BOOLEAN NOT NULL,
+	galaxy_id REFERENCES galaxy(id)
+);
+
+CREATE TABLE stars_action(
+	id SERIAL PRIMARY KEY,
+	boom_time INT,
+	star_id REFERENCES stars(id)
+);
+
+INSERT INTO galaxy(age, found, name)
+VALUES (1400000000, true, 'Млечный путь');
+INSERT INTO planet(hasLive, name, galaxy_id)
+VALUES (false, 'Юпитер', 1);
+INSERT INTO planet(hasLive, name, galaxy_id)
+VALUES (true, 'Земля', 1);
+INSERT INTO person(name, planet_id, age, nationality)
+VALUES ('Саша', 2, 14, null);
+INSERT INTO obj(name, description)
+VALUES ('телескоп', null);
+INSERT INTO person_obj(person_id, obj_id)
+VALUES (1, 1);
+INSERT INTO stars(name, color, status, galaxy_id)
+VALUES ('Звезда', 'yellow', true, 1);
+INSERT INTO stars_action(boom_time, star_id)
+VALUES (2, 1);
