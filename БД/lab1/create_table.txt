@@ -69,3 +69,83 @@ INSERT INTO stars(name, color, status, galaxy_id)
 VALUES ('Звезда', 'yellow', true, 1);
 INSERT INTO stars_action(boom_time, star_id)
 VALUES (2, 1);
+
+----------------ENUM----------------
+
+CREATE TYPE sex AS ENUM ('M', 'F');
+
+CREATE TYPE title AS ENUM ('Генерал', 'Полковник', 'Лейтинант', 'Капитан', 'Солдат');
+
+---------------TABLES---------------
+
+CREATE TABLE Locations
+(
+    id          SERIAL PRIMARY KEY,
+    name        varchar(50),
+    coordinates point
+);
+
+CREATE TABLE People
+(
+    id   SERIAL PRIMARY KEY,
+    name varchar(50),
+    sex  sex
+);
+
+CREATE TABLE Person_action
+(
+    id        SERIAL PRIMARY KEY,
+    action    varchar(50),
+    person_id SERIAL REFERENCES People (id)
+);
+
+CREATE TABLE Countries
+(
+    id   SERIAL PRIMARY KEY,
+    name varchar(50)
+);
+
+CREATE TABLE Cities
+(
+    id          SERIAL PRIMARY KEY,
+    name        varchar(50),
+    location_id SERIAL REFERENCES Locations (id),
+    country_id  SERIAL REFERENCES Countries (id)
+);
+
+CREATE TABLE Capitals
+(
+    id         SERIAL PRIMARY KEY,
+    country_id SERIAL REFERENCES Countries (id),
+    city_id    SERIAL REFERENCES Cities (id)
+);
+
+CREATE TABLE Armies
+(
+    id         SERIAL PRIMARY KEY,
+    country_id SERIAL REFERENCES Countries (id)
+);
+
+CREATE TABLE Solders
+(
+    id        SERIAL PRIMARY KEY,
+    person_id SERIAL REFERENCES People (id),
+    army_id   SERIAL REFERENCES Armies (id),
+    title     title
+);
+
+CREATE TABLE Fights
+(
+    id         SERIAL PRIMARY KEY,
+    name       varchar(50),
+    city_id    SERIAL REFERENCES Cities (id),
+    date_start time,
+    date_end   time
+);
+
+CREATE TABLE Fights_replays
+(
+    id       SERIAL PRIMARY KEY,
+    army_id  SERIAL REFERENCES Armies (id),
+    fight_id SERIAL REFERENCES Fights (id)
+);
